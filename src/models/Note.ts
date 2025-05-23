@@ -26,4 +26,5 @@ const noteSchema = new Schema<INote>({
   }
 });
 
-export default mongoose.model<INote>('Note', noteSchema); 
+const Note = mongoose.model<INote>('Note', noteSchema);
+export { Note }; 
