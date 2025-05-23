@@ -10,7 +10,9 @@ dotenv.config();
 const app: Express = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://todo-front-steel.vercel.app/'  // Replace with your actual frontend URL
+}));
 app.use(express.json());
 
 // Routes
