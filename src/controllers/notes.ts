@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Note from '../models/Note';
+import { Note } from '../models/Note';
 import { AuthRequest } from '../types';
 
 // Get all notes for a user
